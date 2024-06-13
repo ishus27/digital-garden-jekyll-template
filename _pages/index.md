@@ -1,11 +1,26 @@
----
+--- 
 layout: page
 title: Home
 id: home
 permalink: /
 ---
 
-# Welcome! 🌱
+<section id="weekly-quotes">
+  <h4>Weekly Quotes</h4>
+  <div>
+      {% include Quote_1.md %}<br>
+      {% include Quote_2.md %}
+  </div>
+</section>
+
+<section id="weekly-quotetest">
+  <h4>Weekly Quotes</h4>
+  <div>
+
+  {% include Quotes.md %}
+  
+  </div>
+</section>
 
 <p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
   Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
