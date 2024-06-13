@@ -8,10 +8,37 @@
     <div class="nav-left">
       <a class="internal-link" href="{{ site.baseurl }}/"><b>{{ site.title }}</b></a>
     </div>
-    <div class="nav-right">
+
+    <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
+      &#9776;
+    </button>
+
+    <div class="nav-right" id="nav-menu">
       <a class="internal-link" href="{{ site.baseurl }}/about">About</a>
       <a class="internal-link" href="{{ site.baseurl }}/learn">Learn</a>
       <a class="internal-link" href="{{ site.baseurl }}/thoughts">Thoughts</a>
       <a class="internal-link" href="{{ site.baseurl }}/contact">Contact</a>
     </div>
   </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var navbarToggle = document.getElementById('navbar-toggle');
+      var navMenu = document.getElementById('nav-menu');
+  
+      navbarToggle.addEventListener('click', function(event) {
+        event.stopPropagation();
+        navMenu.classList.toggle('active');
+      });
+  
+      document.addEventListener('click', function(event) {
+        if (!navMenu.contains(event.target) && !navbarToggle.contains(event.target)) {
+          navMenu.classList.remove('active');
+        }
+      });
+  
+      navMenu.addEventListener('click', function(event) {
+        event.stopPropagation();
+      });
+    });
+  </script>
