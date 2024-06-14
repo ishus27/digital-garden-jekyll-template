@@ -145,6 +145,16 @@ code {
   cursor: help;
 }
 
+//* Added another Quote Box
+.quote-box {
+  background-color: #E6F7FF; /* Light Grey */
+  border-left: 5px solid #003366; /* Dark Grey */
+  padding: 10px 20px;
+  margin: 20px 0;
+  font-style: italic;
+  color: #333333;
+}
+
 //* Added for navbar additions
 .navbar {
   display: flex;
