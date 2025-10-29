@@ -31,6 +31,16 @@ collections:
   notes:
     output: true
     permalink: /:slug
+  quotes:
+    output: true
+    permalink: /quotes/:title/
+  learn:
+    output: true
+    permalink: /learn/:slug/
+  easternview:
+    output: true
+    permalink: /learn/:slug/
+
 
 defaults:
   - scope:
@@ -39,5 +49,13 @@ defaults:
       layout: "default"
   - scope:
       path: "_notes/**/*.md"
+    values:
+      layout: "note"
+  - scope:
+      path: "_learn/**/*.md"
+    values:
+      layout: "note"
+  - scope:
+      path: "_easternview/**/*.md"
     values:
       layout: "note"

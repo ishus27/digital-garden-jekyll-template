@@ -5,18 +5,18 @@ id: home
 permalink: /
 ---
 
+{% if site.quotes %}
 <section id="weekly-quotes">
-  <h4>Weekly Quotes</h4>
-  <div>
-      <div class="quote-box">
-      {% include Quote_1.md %}<br>
-      {% include Quote_2.md %}
-      </div>
-  </div>
+<h4>[[Weekly Quotes]]</h4>
+<div class="quote-box">
+{% assign recent_quotes = site.quotes | sort: "date" | reverse %}
+{% for quote in recent_quotes limit:2 %}"{{ quote.content | strip | strip_html }}" - {{ quote.author }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}
+</div>
 </section>
+{% endif %}
 
 
-<p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
+<p style="padding: 3em 1em; background: transparent; border-radius: 4px;">
   Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
 </p>
 
