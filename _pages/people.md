@@ -1,5 +1,7 @@
 ---
+layout: page
 title: people
+permalink: /people
 ---
 
 #### AI/ML
@@ -29,7 +31,7 @@ title: people
 #### Biology, Regeneration, & Life Sciences
 - Michael Levin [🌐](https://thoughtforms.life/about/) [🧬](https://www.drmichaellevin.org/people/) – morphogenesis, bioelectricity, regeneration
 - Jeremy England [🧬](https://www.englandlab.com/) – dissipative adaptation, statistical physics of life
-- William Bialek (https://phy.princeton.edu/people/william-bialek) – biophysics, information in living systems
+- William Bialek [🌐](https://phy.princeton.edu/people/william-bialek) – biophysics, information in living systems
 
 #### Foundations of Physics & Thermodynamics
 - Ilya Prigogine – nonequilibrium thermodynamics, dissipative structures
@@ -40,23 +42,3 @@ title: people
 - Laura Deming – longevity science, biotech investment
 - Alexi Gladstone – (AI/ML research)
 - 
-
-
-
-
-
-<details>
-<summary>Andrej Karpathy</summary>
-<div markdown="1">
-<!-- Add resources here -->
-- [Resource 1](#)
-- [Resource 2](#)
-</div>
-</details>
-
-<details>
-<summary>Yann LeCun</summary>
-<div markdown="1">
-- [Models of SSL 04/29/2025](https://www.youtube.com/watch?v=AfqWt1rk7TE)
-</div>
-</details>

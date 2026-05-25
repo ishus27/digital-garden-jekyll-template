@@ -4,7 +4,8 @@ class BidirectionalLinksGenerator < Jekyll::Generator
     graph_nodes = []
     graph_edges = []
 
-    all_notes = site.collections['notes'].docs + site.collections['learn'].docs + site.collections['easternview'].docs
+    graph_collections = site.config['graph_collections'] || %w[notes learn easternview people]
+    all_notes = graph_collections.flat_map { |c| site.collections[c]&.docs || [] }
     all_pages = site.pages
 
     all_docs = all_notes + all_pages

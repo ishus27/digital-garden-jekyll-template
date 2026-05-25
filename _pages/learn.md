@@ -4,10 +4,7 @@ title: Learn
 permalink: /learn
 ---
 
-# Learn
-Add Subjects, People, Projects etc.
-
-##### Nodes
+#### Nodes
 - [[tda|Dissipative Adaptaion, Non-Equilibrium & Stochastic Thermodynamics]]
     - [[Thermodynamics]]
     - Thermodynamicalism
@@ -18,4 +15,4 @@ Add Subjects, People, Projects etc.
 - **Developmental & Regenerative Biology**(Levin)
 
 
-##### [[People]]
+#### [People](/people){: .internal-link}

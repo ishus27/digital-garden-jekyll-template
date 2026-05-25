@@ -40,6 +40,11 @@ collections:
   easternview:
     output: true
     permalink: /learn/:slug/
+  people:
+    output: true
+    permalink: /people/:slug/
+
+graph_collections: [notes, learn, easternview, people]
 
 
 defaults:
@@ -57,5 +62,9 @@ defaults:
       layout: "note"
   - scope:
       path: "_easternview/**/*.md"
+    values:
+      layout: "note"
+  - scope:
+      path: "_people/**/*.md"
     values:
       layout: "note"
